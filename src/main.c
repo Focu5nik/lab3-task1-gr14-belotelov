@@ -1,8 +1,20 @@
-/* hello.c */
 #include <stdio.h>
+#include <string.h>
 
-void main (void)
+#define MAX 300
+
+int NumberOfChar(char* str, char ch)
 {
-	printf ("Hello World\n");
-	printf ("Goodbye World\n");
+    int count = 0;
+    for (int i = 0; i < strlen(str);i++) {
+        if (str[i] == ch) {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main(int args, char** argv)
+{
+  
 }
